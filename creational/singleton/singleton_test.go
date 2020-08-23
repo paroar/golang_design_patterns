@@ -6,7 +6,7 @@ func TestGetInstance(t *testing.T){
 	counter1 := GetInstance()
 
 	if counter1 == nil {
-		t.Errorf("expected pointer to Singleton after calling GetInstance(), not nill\n")
+		t.Fatal("expected pointer to Singleton after calling GetInstance(), not nill\n")
 	}
 
 	expectedCounter := counter1
