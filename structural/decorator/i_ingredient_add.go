@@ -1,5 +1,5 @@
 package decorator
 
-type IIngredientAdd interface{
+type IIngredientAdd interface {
 	AddIngredient() (string, error)
 }

@@ -10,7 +10,7 @@ type Onion struct {
 }
 
 func (o *Onion) AddIngredient() (string, error) {
-	if o.Ingredient == nil{
+	if o.Ingredient == nil {
 		return "", errors.New("Ingredient field on onion is empty")
 	}
 	pizza, err := o.Ingredient.AddIngredient()
