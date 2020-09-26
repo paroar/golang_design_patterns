@@ -31,7 +31,7 @@ func TestUserListProxy(t *testing.T) {
 			t.Errorf("Expected ID: %d\nActual ID: %d\n", knownIDs, user.ID)
 		}
 		if len(proxy.StackCache) != 1 {
-			t.Errorf("Expected lenght: 1\nActual lenght: %d", len(proxy.StackCache))
+			t.Errorf("Expected length: 1\nActual length: %d", len(proxy.StackCache))
 		}
 		if proxy.DidLastSearchUsedCache {
 			t.Error("No user can be returned from an empty cache")
@@ -47,7 +47,7 @@ func TestUserListProxy(t *testing.T) {
 			t.Errorf("Expected ID: %d\nActual ID: %d\n", knownIDs, user.ID)
 		}
 		if len(proxy.StackCache) != 1 {
-			t.Errorf("Expected lenght: 1\nActual lenght: %d", len(proxy.StackCache))
+			t.Errorf("Expected length: 1\nActual length: %d", len(proxy.StackCache))
 		}
 		if !proxy.DidLastSearchUsedCache {
 			t.Error("Expected user returned from cache")
@@ -81,7 +81,7 @@ func TestUserListProxy(t *testing.T) {
 		}
 
 		if len(proxy.StackCache) != 2 {
-			t.Errorf("Expected lenght: 2\nActual lenght: %d", len(proxy.StackCache))
+			t.Errorf("Expected length: 2\nActual length: %d", len(proxy.StackCache))
 		}
 	})
 
